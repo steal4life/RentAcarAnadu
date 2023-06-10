@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/PickedCar.css">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    
+
+  <!--DatePicker-->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <logo></logo>
+      </a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+        </ul>
+        
+      </nav>
+
+      <div class="steper">
+          
+      </div>
+
+      <div class="header-actions">
+
+        <div class="header-contact">
+        
+        </div>
+
+        <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="car-outline"></ion-icon>
+
+          <span id="aria-label-txt">Explore cars</span>
+        </a>
+
+        <a href="login.html" class="btn user-btn" aria-label="Profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+  <br>
+  <br>
+  <br>
+<section class="carDateInfo">
+  <div class="carInfoDate">
+    <div class="car-info-2">
+      <div class="car-image-2">
+        <img src="" alt="" loading="lazy" width="200" height="200">
+      </div>
+      <div class="car-details">
+        <h3 class="car-title-2"></h3>
+        <p class="car-price-2"></p>
+      </div>
+    </div>
+    <div class="dates-container">
+      <img src="assets\images\clock.png" width="30" height="30" alt="Clock icon">
+      <div class="dates-text">
+        <div class="pickUpLocation"></div>
+        <span class="start-date"></span> 
+        <span class="separator">→</span>
+        <div class="dropOffLocation"></div> 
+        <span class="end-date"></span>
+      </div>
+      <button class="edit-dates-btn">
+        <i class="fas fa-pen"></i>
+      </button>
+    </div>
+    
+  </div>
+</section>
+  <section class="insurance">
+    <div class="insurance-container">
+      <h2 class="insurance-title">Select Insurance</h2>
+      <div class="tabs">
+        <button class="tablinks active" onclick="openTab(event, 'basic')">Basic Insurance</button>
+        <button class="tablinks" onclick="openTab(event, 'premium')">Premium Insurance</button>
+      </div>
+    
+      <div id="basic" class="tabcontent" style="display: block;">
+        <h3>Basic Insurance</h3>
+        <h4>Price: 0€</h4>
+        <ul class="insurance-list">
+          <li>Windscreen, lights and tire protection</li>		
+          <li><span class="check"></span> Theft protection</li>
+          <li>Super CDW (SCDW)</li>				
+          <li>Overhead and underbody damage</li>				
+          <li><span class="check"></span> Collision and damage protection</li>
+          <li>Personal accident protection</li>	
+        </ul>
+        <button class="btn next-basic">Next</button>
+      </div>
+    
+      <div id="premium" class="tabcontent">
+        <h3>Premium Insurance</h3>
+        <h4 class="priceOfInsurance">Price: </h4>
+        <ul class="insurance-list">
+          <li><span class="check"></span> Windscreen, lights and tire protection</li>
+          <li><span class="check"></span> Theft protection</li>
+          <li><span class="check"></span> Super CDW (SCDW)</li>
+          <li><span class="check"></span> Overhead and underbody damage</li>
+          <li><span class="check"></span> Collision and damage protection</li>
+          <li><span class="check"></span> Personal accident protection</li>
+        </ul>        
+        <button class="btn next-premium">Next</button>
+      </div>
+    </div>
+    
+  </section>
+  
+  <section class="section featured-car" id="featured-car">
+    <div class="container">
+      <section class="section featured-car" id="featured-car">
+        <div class="container">
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Picked Car Details</h2>
+          </div>
+          <div class="picked-car-details">
+            <div class="car-image">
+              <img src="" alt="" loading="lazy" width="340" height="200" class="w-100">
+            </div>
+            <div class="car-details">
+              <h3 class="h3 card-title">
+                  <span class="car-title"></span>
+                              </h3>
+              <data class="year" value=""></data>
+              <ul class="card-list">
+                <li class="card-list-item">
+                  <ion-icon name="people-outline"></ion-icon>
+                  <span class="card-item-text"></span>
+                </li>
+                <li class="card-list-item">
+                  <ion-icon name="flash-outline"></ion-icon>
+                  <span class="card-item-text"></span>
+                </li>
+                <li class="card-list-item">
+                  <ion-icon name="speedometer-outline"></ion-icon>
+                  <span class="card-item-text"></span>
+                </li>
+                <li class="card-list-item">
+                  <ion-icon name="hardware-chip-outline"></ion-icon>
+                  <span class="card-item-text"></span>
+                </li>
+              </ul>
+              <div class="card-price-wrapper">
+                <div class="locations">
+                  <div class="pickUp-last">
+                    <span class="wraper-left">PickUp:</span>
+                    <span class="wraper-right"></span>
+                  </div>
+                  <div class="dropOff-last">
+                    <span class="wraper-left">DropOff:</span>
+                    <span class="wraper-right"></span>
+                  </div>
+                </div>
+                <div class="dates-last">
+                  <div class="dates-from">
+                    <span class="wraper-left">From:</span>
+                    <span class="wraper-right">5/24 12:31 AM</span>
+                  </div>
+                  <div class="dates-to">
+                    <span class="wraper-left">To:</span>
+                    <span class="wraper-right">5/31 08:00 AM</span>
+                  </div>
+                </div>
+                <div class="days">
+                  <span class="wraper-left">Number of days:</span>
+                  <span class="wraper-right"></span>
+                </div>
+                <div class="insurance-last">
+                  <span class="wraper-left">Insurance:</span>
+                  <span class="wraper-right"></span>
+                </div>
+                <div class="accessories-last">
+                  <span class="wraper-left">Add ons:</span>
+                  <span class="wraper-right"></span>
+                </div>
+                <div class="car-price-last">
+                  <span class="wraper-left">Total price:</span>
+                  <span class="wraper-right"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <form class="form-send-mail" action="https://formsubmit.co/anadurentacar@gmail.com" id="contactForm" target="_blank" method="POST">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="Nova rezervacija!">
+            <input type="hidden" id="carName-input" name="Car_Name">
+            <input type="hidden" id="pickUp-input" name="PickUp_location">
+            <input type="hidden" id="dropOff-input" name="DropOff_location">
+            <input type="hidden" id="dates-from-input" name="From_Date">
+            <input type="hidden" id="dates-to-input" name="To_Date">
+            <input type="hidden" id="card-price-input" name="Car_Price">
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col">
+                  <label for="driver-name">Driver's Name:</label>
+                  <input type="text" id="driver-name" class="form-control" name="driver_name" required>
+                </div>
+                <div class="col">
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" class="form-control" name="email" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="country">Country:</label>
+              <input type="text" id="country" class="form-control" name="country" required>
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth:</label>
+              <input type="date" class="form-control" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+              <label for="code">Postal Code:</label>
+              <input type="text" class="form-control" id="code" name="code" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="text" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="address">Address:</label>
+              <textarea id="address" class="form-control" name="address" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="note">Note:</label>
+              <textarea id="note" class="form-control" name="note" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-dark btn-block btn-sendForm">Submit Form</button>
+          </form>
+        </div>
+        
+
+      <section id="section textConfrmation" class="textConframtion">
+        
+      </section>
+
+  </section>
+
+
+      <section class="section accessories" id="accessories">
+        <div class="container">
+          <div class="title-wrapper">
+            <h2 class="h2 section-title accessories-title">Add-ons</h2>
+          </div>
+          <div class="accessories-list">
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="accessory" value="gps">
+                  <span>GPS Navigation System (+8€/day)</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="accessory" value="child-seat-toodler">
+                  <span>Child Seat (Toddler) (+8€/day)</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="accessory" value="child-seat-infant">
+                  <span>Child Seat (Infant) (+8€/day)</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="accessory" value="3rd-driver">
+                  <span>Additional Driver (+2€/day)</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="accessory" value="wifi">
+                  <span>Portable Wi-Fi Hotspot (+8€/day)</span>
+                </label>
+              </li>
+            </ul>
+          </div>          
+          <div class="price-details">
+            <div class="price-wrapper">
+              <p class="base-price">Base Rental Price: <span></span></p>
+              <p class="accessory-price">Add-on Price: <span>0</span></p>
+              <p class="total-price">Total Rental Price: <span></span></p>
+            </div>
+          </div>
+          <button class="btn next-accessories">Next</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script  src="./assets/js/mail.js"></script>
+    <script src="./assets/js/PickedCar.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

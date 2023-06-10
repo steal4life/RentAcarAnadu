@@ -1,0 +1,704 @@
+/* General styles */
+
+:root {
+
+  /**
+   * colors
+   */
+
+  --pale-purple-pantone: hsl(262, 63%, 92%);
+  --medium-sea-green: hsl(152, 63%, 43%);
+  --lavender-blush: hsl(336, 35%, 92%);
+  --carolina-blue: hsl(204, 91%, 53%);
+  --columbia-blue: hsl(204, 92%, 90%);
+  --alice-blue-1: #edf1f7;
+  --alice-blue-2: hsl(216, 75%, 97%);
+  --alice-blue-3: hsl(216, 38%, 95%);
+  --alice-blue-4: hsl(217, 33%, 92%);
+  --independence: hsl(219, 21%, 39%);
+  --deep-cerise: hsl(329, 63%, 52%);
+  --eerie-black: hsl(210, 11%, 15%);
+  --space-cadet: hsl(240, 22%, 25%);
+  --blue-jeans: hsl(204, 80%, 63%);
+  --slate-blue: hsl(262, 60%, 57%);
+  --beau-blue: hsl(208, 86%, 92%);
+  --honey-dew: hsl(152, 48%, 89%);
+  --mimi-pink: hsl(329, 63%, 90%);
+  --red-salsa: hsl(0, 79%, 63%);
+  --sapphire: hsl(211, 100%, 35%);
+  --manatee: hsl(219, 14%, 60%);
+  --white: hsl(0, 0%, 100%);
+
+  --gradient: linear-gradient(to top, var(--alice-blue-2), var(--alice-blue-3));
+
+  /**
+   * typography
+   */
+
+  --ff-nunito: 'Nunito', sans-serif;
+  --ff-open-sans: 'Open Sans', sans-serif;
+
+  --fs-1: 2.125rem;
+  --fs-2: 1.875rem;
+  --fs-3: 1.5rem;
+  --fs-4: 1.375rem;
+  --fs-5: 1.125rem;
+  --fs-6: 0.875rem;
+  --fs-7: 0.625rem;
+
+  --fw-400: 400;
+  --fw-600: 600;
+
+  /**
+   * transition
+   */
+
+  --transition: 0.5s ease;
+
+  /**
+   * spacing
+   */
+
+  --section-padding: 50px;
+
+  /**
+   * radius
+   */
+
+  --radius-10: 10px;
+  --radius-14: 14px;
+  --radius-18: 18px;
+
+  /**
+   * shadow
+   */
+
+  --shadow-1: 3px 3px 9px hsla(240, 14%, 69%, 0.2);
+  --shadow-2: 3px 3px 9px hsla(204, 92%, 59%, 0.3);
+
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  max-width: 20ch;
+  margin-bottom: var(--section-padding);
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  margin-top: var(--section-padding);
+}
+
+.card-list {
+  border-bottom: 1px solid black;
+}
+
+
+.card-list-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--independence);
+  font-size: var(--fs-6);
+}
+
+.card-item-text {
+  transition: var(--transition);
+}
+
+.card-list-item:hover .card-item-text {
+  color: var(--space-cadet);
+}
+
+/* Featured Car section */
+
+
+
+/* Accessories section */
+
+.accessories .title-wrapper {
+  margin-bottom: var(--section-padding);
+}
+
+.accessories-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accessories-list li {
+  margin-bottom: var(--section-padding);
+}
+
+.accessories-list label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--independence);
+  font-size: var(--fs-6);
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.accessories-list label:hover input[type="checkbox"] ~ span {
+  color: var(--space-cadet);
+  position: relative;
+}
+
+.accessories-list label input[type="checkbox"] ~ span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--space-cadet);
+  transform-origin: left;
+  transition: width 0.3s ease-in-out;
+}
+
+.accessories-list label:hover input[type="checkbox"] ~ span::after {
+  animation: underline 0.3s forwards;
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.accessories-list input[type="checkbox"] {
+  display: none;
+}
+
+.accessories-list input[type="checkbox"] + span{
+  content: "+€";
+  color: var(--independence);
+  font-weight: var(--fw-300);
+  letter-spacing: 0.1rem;
+}
+
+.accessories-list input[type="checkbox"] + span::before {
+  content: "+€";
+  color: var(--independence);
+  font-weight: var(--fw-400);
+}
+
+.accessories-list input[type="checkbox"]:checked + span::before {
+  color: var(--carolina-blue);
+  font-weight: var(--fw-600);
+}
+
+/*steper*/
+
+.steper {
+  margin-bottom: 0.5rem;
+  color: var(--independence);
+  font-size: 0.9rem;
+  border-bottom: 1px solid black; 
+  }
+
+  /* Media Queries */
+  @media screen and (max-width: 767px) {
+    .car-image,
+    .car-details {
+      width: 100%;
+    }
+  }
+  
+  /*small info top left*/
+
+  .carDateInfo{
+    color: var(--independence);
+  }
+
+  .carInfoDate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .car-info-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 40rem;
+    height: 10rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  
+  .car-image-2 {
+    position: relative;
+  }
+  
+  .car-image-2 img {
+    display: block;
+    max-width: 20%;
+    height: auto;
+    float: left;
+    animation: slideInFromLeft 2s ease-in-out;
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .car-title-2 {
+    font-size: 1.5rem;
+    width: 50rem;
+    margin: 0;
+  }
+  
+  .car-price-2 {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  
+  .car-price-2  {
+    font-weight: var(--fw-600);
+  }
+  
+  .car-price-2:before {
+    font-weight: var(--fw-400);
+  }
+  
+  /*dates*/
+  
+  .dates-container {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    width: 48rem;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dates-container img {
+    margin-right: 1rem;
+  }
+  
+  .dates-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .separator {
+    margin: 0 1rem;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  
+  .edit-dates-btn {
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .edit-dates-btn i {
+    color: #ccc;
+  }
+  
+  .edit-dates-btn:hover i {
+    color: #666;
+  }
+  
+  .pickUpLocation,
+  .dropOffLocation {
+    margin-right: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /*incurance*/
+  .insurance-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+  }
+  
+  .insurance-title {
+    color: var(--independence);
+    font-family: var(--ff-nunito);
+    font-size: var(--fs-3);
+    margin-top: -5rem;
+    padding-block: 5px;
+  }
+  
+  /* Style the tab content */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 4rem;
+  }
+  
+  .tablinks {
+    background-color: var(--carolina-blue);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 5px;
+  }
+  
+  /* Change background color of active tab button */
+  .tablinks.active {
+    background-color: var(--independence);
+  }
+  
+  .tabcontent {
+    display: none;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .tabcontent > h3, h4{
+    color: var(--independence);
+    margin-left: 38%;
+    font-size: 1.2rem;
+  }
+  
+  .next-premium,
+  .next-basic {
+    width: 10rem;
+    margin-top: 1.5rem;
+    margin-left: 3.5rem;
+  }
+  
+  .next-accessories {
+    width: 10rem;
+  }
+  
+  /* Align checks to the right of each li item */
+  .insurance-list li {
+    list-style-type: none;
+    padding: 0.2rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    margin-left: 5rem;
+    border: none;
+    margin-bottom: 0.3rem;
+    border-bottom-left-radius: 5px; /* Set the border bottom left radius to 5px */
+    border-color: gray;
+    border-bottom: 1px solid gray;
+  }
+
+  .insurance-list li:hover {
+   background-color: var(--independence);
+   color: var(--alice-blue-1);
+  }
+  
+  .insurance-list + button {
+    margin-left: 40%;
+    width: 20rem;
+    margin-bottom: 1rem;
+  }
+  
+  .check {
+    position: relative;
+    padding-right: 1.5rem;
+  }
+  
+  .check:before {
+    content: '\2714';
+    color: var(--medium-sea-green);
+    position: absolute;
+    right: -2rem;
+    top: 0.2rem;
+  }
+  
+/* animation for featured car section */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* apply fade-in animation to featured car section */
+.featured-car {
+  animation: fade-in 1s ease-in-out;
+}
+
+/* style for the form */
+.form-send-mail{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: var(--gradient);
+  border: 1px solid var(--white);
+  box-shadow: var(--shadow-1);
+  border-radius: var(--radius-18);
+  font-family: var(--ff-nunito);
+}
+
+/* style for form inputs and labels */
+label,
+input,
+textarea {
+  display: block;
+  margin-bottom: 1rem;
+  font-family: var(--ff-open-sans);
+  font-size: var(--fs-5);
+  color: var(--space-cadet);
+  line-height: 1.5;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--white);
+}
+
+input[type="submit"] {
+  background-color: var(--carolina-blue);
+  color: var(--white);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: var(--fs-5);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--medium-sea-green);
+}
+
+/* style for the picked car details */
+.picked-car-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.car-image img {
+  width: 100%;
+}
+
+.card-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-list li ion-icon {
+  margin-right: 10px;
+}
+
+.cost-summary {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.car-details {
+  margin-left: 2rem;
+}
+
+.card-title {
+  font-family: var(--ff-nunito);
+  font-size: var(--fs-2);
+  color: var(--independence);
+  margin-bottom: 1rem;
+}
+
+.card-list {
+  margin-bottom: 1rem;
+}
+
+.card-list-item {
+  display: flex;
+  align-items: center;
+  font-family: var(--ff-open-sans);
+  font-size: var(--fs-5);
+  color: var(--space-cadet);
+  margin-bottom: 0.5rem;
+}
+
+.card-list-item ion-icon {
+  margin-right: 0.5rem;
+}
+
+.card-price-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: var(--ff-nunito);
+  font-size: var(--fs-4);
+  color: var(--section-padding);
+}
+
+.car-image img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  float: right;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+  font-family: var(--ff-nunito);
+  font-size: var(--fs-1);
+  color: var(--eerie-black);
+  text-align: center;
+}
+
+.title-wrapper {
+  margin-bottom: 3rem;
+}
+
+/*prikaz odabranog*/
+
+.days,.insurance-last,
+.accessories-last,
+.car-price-last {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.dates-last {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.dates-from,
+.dates-to {
+  display: flex;
+  align-items: center;
+}
+
+.dates-from .wraper-right::after {
+  content: "→";
+  margin-left: 1rem;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.locations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.locations .pickUp-last,
+.locations .dropOff-last {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+  
+.locations .pickUp-last .wraper-right::after {
+  content: "→";
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.wraper-left {
+  margin-right: 10px;
+}
+
+
+/* Add these rules to display the number of days and price on the left and right sides, respectively */
+
+.days-wrapper,
+.price-wrapper,
+.ads-wrapper,
+.insurance-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-family: var(--ff-open-sans);
+  font-size: var(--fs-5);
+  color: var(--space-cadet);
+}
+
+.days-wrapper span,
+.price-wrapper span,
+.ads-wrapper span,
+.insurance-wrapper span {
+  font-family: var(--ff-nunito);
+  font-size: var(--fs-4);
+  color: var(--section-padding);
+}
+
+
+.btn-sendForm{
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .picked-car-details {
+    flex-direction: column;
+  }
+
+  .car-details {
+    margin-top: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .car-image {
+    margin-bottom: 2rem;
+  }
+
+  .card-price-wrapper {
+    align-items: center;
+  }
+}
+
+
+  

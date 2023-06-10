@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent s car Split</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+    
+
+  <!--DatePicker-->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <logo></logo>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          
+          <li >
+            <a href="#featured-car" class="navbar-link" data-nav-link>Cars</a>
+          </li>
+
+          <li>
+            <a href="#search" class="navbar-link" data-nav-link>Search Cars</a>
+          </li>
+
+          <li>
+            <a href="#getStarted" class="navbar-link" data-nav-link>How to use</a>
+          </li>
+
+          <li>
+            <a href="#fut" class="navbar-link" data-nav-link>Social media</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <div class="header-contact">
+        
+        </div>
+
+        <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="car-outline"></ion-icon>
+
+          <span id="aria-label-txt">Explore cars</span>
+        </a>
+
+        <a href="login.html" class="btn user-btn" aria-label="Profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+            <h2 class="h1 hero-title">Rent a car Anadu</h2>
+
+            <p class="hero-text">
+              Best prices in Dalmatia.
+            </p>
+          </div>
+
+          <div class="hero-banner"><img src="assets/images/hero-banner.png"></div>
+
+          <div class="hero-form">
+
+            <div class="input-wrapper">
+              <label for="input-1" class="input-label">Pick-up location</label>
+
+              <input type="text" name="car-model" id="input-1" class="input-field pickUp"
+                placeholder="Split/Trogir/Kaštela/Airport">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="input-1" class="input-label">Drop-off location</label>
+  
+                <input type="text" name="car-model" id="input-1" class="input-field dropOff"
+                  placeholder="Split/Trogir/Kaštela/Airport">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="input-1" class="input-label">Dates</label>
+  
+                <input type="text" name="datetimes" id="input-1" class="input-field" />
+            </div>
+            
+            <a href="#search">
+              <button class="btn btn-search setItUp">Set it up
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+    </br>
+  </br>
+</br>
+
+    
+<section class="section get-start" id="getStarted">
+  <div class="container">
+    <h2 class="h2 section-title">Get started with 4 simple steps</h2>
+
+    <ul class="get-start-list">
+
+      <li>
+        <div class="get-start-card">
+
+          <div class="card-icon icon-1">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+
+          <h3 class="card-title">Select pickup and drop-off locations</h3>
+
+          <p class="card-text">
+            Visit our website and choose the locations for your rental car, along with the dates and daily rental rate that fit your budget.
+          </p>
+
+          <a href="#" class="card-link">Get started</a>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="get-start-card">
+
+          <div class="card-icon icon-2">
+            <ion-icon name="shield-checkmark-outline"></ion-icon>
+          </div>
+
+          <h3 class="card-title">Choose insurance</h3>
+
+          <p class="card-text">
+            Select insurance for your rental car to protect yourself and the vehicle in case of any damage or accidents during your rental period.
+          </p>
+
+         <a href="#" class="card-link">Get started</a>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="get-start-card">
+
+          <div class="card-icon icon-3">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
+
+          <h3 class="card-title">Add accessories</h3>
+
+          <p class="card-text">
+            Choose any additional accessories you may need, such as GPS navigation, child car seat, or roof rack, for an extra fee.
+          </p>
+
+          <a href="#" class="card-link">Get started</a>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="get-start-card">
+
+          <div class="card-icon icon-4">
+            <ion-icon name="information-circle-outline"></ion-icon>
+          </div>
+
+          <h3 class="card-title">Enter personal and payment information</h3>
+
+          <p class="card-text">
+            Finally, enter your personal and payment information and send a confirmation email to finalize your rental. The email will include all the details of your rental, such as pickup and drop-off locations, rental duration, the total cost, and any additional information you may need.
+          </p>
+
+          <a href="#" class="card-link">Get started</a>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+      <!-- 
+        - #FEATURED CAR
+      -->
+
+      <section class="section hero" id="search">
+        <div class="container">
+
+          <div class="hero-content">
+            <h2 class="h1 hero-title">Search by car price per day</h2>
+
+          </div>
+
+
+          <div action="" class="hero-form searchPriceDiv">
+
+            <div class="input-wrapper">
+              <label class="input-label" for="max-price-input">Minimum price:</label>
+              <input type="number" class="input-field" id="min-price-input" name="min-price-input" placeholder="minimum in euro">
+            </div>
+            <div class="input-wrapper">
+              <label class="input-label" for="max-price-input">Maximum price:</label>
+              <input type="number" class="input-field" id="max-price-input" name="max-price-input" placeholder="maximum in euro">
+            </div>
+            <a href="#featured-car">
+              <button type="submit"  class="btn btn-search price">Search</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section featured-car" id="featured-car">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title cars-title">Cars</h2>
+
+            <a href="#" class="featured-car-link">
+              <span>View more</span>
+
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <!--OVDE SE ISPISUJU AUTA-->
+          <ul class="featured-car-list">
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer id="fut" class="footer">
+    <div class="container">
+
+      <div class="footer-top"></div>
+
+      <div class="footer-bottom">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+
+</body>
+
+</html>

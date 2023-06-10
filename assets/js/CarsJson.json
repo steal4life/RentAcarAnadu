@@ -1,0 +1,347 @@
+ {
+    "featuredCars": [
+      {
+        "carIndex": 0,
+        "carImage": "./assets/images/car-1.jpg",
+        "carSmallImage":"./assets/images/FiatPanda.png",
+        "carTitle": "Fiat Panda or Similar",
+        "carYear": 2021,
+        "carList": [
+          {
+            "icon": "people-outline",
+            "text": "4 People"
+          },
+          {
+            "icon": "flash-outline",
+            "text": "Hybrid"
+          },
+          {
+            "icon": "speedometer-outline",
+            "text": "6.1km / 1-litre"
+          },
+          {
+            "icon": "hardware-chip-outline",
+            "text": "Manual"
+          }
+        ],
+        "carPrice": 40, 
+        "valute": "€/per day",
+        "carInsurance": 20
+      },
+      {
+        "carIndex": 1,
+        "carImage": "./assets/images/car-2.jpg",
+        "carSmallImage":"./assets/images/SuzukiSwift.png",
+        "carTitle": "Suzuki Swift or Similar",
+        "carYear": 2019,
+        "carList": [
+          {
+            "icon": "people-outline",
+            "text": "4 People"
+          },
+          {
+            "icon": "flash-outline",
+            "text": "Gasoline"
+          },
+          {
+            "icon": "speedometer-outline",
+            "text": "8.2km / 1-litre"
+          },
+          {
+            "icon": "hardware-chip-outline",
+            "text": "Manual"
+          }
+        ],
+        "carPrice": 50, 
+        "valute": "€/per day",
+        "carInsurance": 20
+      },
+      {
+        "carIndex": 2,
+        "carImage": "./assets/images/car-3.jpg",
+        "carSmallImage":"./assets/images/KiaRio.png",
+        "carTitle": "Kia Rio or Similar",
+        "carYear": 2020,
+        "carList": [
+          {
+            "icon": "people-outline",
+            "text": "4 People"
+          },
+          {
+            "icon": "flash-outline",
+            "text": "Gasoline"
+          },
+          {
+            "icon": "speedometer-outline",
+            "text": "5.3km / 1-litre"
+          },
+          {
+            "icon": "hardware-chip-outline",
+            "text": "Manual"
+          }
+        ],
+        "carPrice": 55, 
+        "valute": "€/per day",
+        "carInsurance": 20 
+      },
+      {
+        "carIndex": 3,
+        "carImage": "./assets/images/car-4.jpg",
+        "carSmallImage":"./assets/images/Golf7.png",
+        "carTitle": "Golf 7 or Similar",
+        "carYear": 2020,
+        "carList": [
+          {
+            "icon": "people-outline",
+            "text": "4 People"
+          },
+          {
+            "icon": "flash-outline",
+            "text": "Gasoline"
+          },
+          {
+            "icon": "speedometer-outline",
+            "text": "5.3km / 1-litre"
+          },
+          {
+            "icon": "hardware-chip-outline",
+            "text": "Manual"
+          }
+        ],
+        "carPrice": 65, 
+        "valute": "€/per day",
+        "carInsurance": 20
+      },
+      {
+        "carIndex": 4,
+        "carImage": "./assets/images/car-5.jpg",
+        "carSmallImage":"./assets/images/SuzukiVitara.png",
+        "carTitle": "Suzuki Vitara mt or Similar",
+        "carYear": 2020,
+        "carList": [
+          {
+            "icon": "people-outline",
+            "text": "4 People"
+          },
+          {
+            "icon": "flash-outline",
+            "text": "Gasoline"
+          },
+          {
+            "icon": "speedometer-outline",
+            "text": "5.3km / 1-litre"
+          },
+          {
+            "icon": "hardware-chip-outline",
+            "text": "Manual"
+          }
+        ],
+        "carPrice": 70, 
+        "valute": "€/per day", 
+        "carInsurance": 20
+      },
+      {
+        "carIndex": 5,
+        "carImage": "./assets/images/car-6.jpg",
+        "carSmallImage":"./assets/images/RenualtTrafic.png",
+        "carTitle": "Renualt Trafic or Similar",
+        "carYear": 2020,
+        "carList": [
+          {
+            "icon": "people-outline",
+            "text": "4 People"
+          },
+          {
+            "icon": "flash-outline",
+            "text": "Gasoline"
+          },
+          {
+            "icon": "speedometer-outline",
+            "text": "5.3km / 1-litre"
+          },
+          {
+            "icon": "hardware-chip-outline",
+            "text": "Manual"
+          }
+        ],
+        "carPrice": 80, 
+        "valute": "€/per day",
+        "carInsurance": 20 
+      },
+      {
+        "carIndex": 6,
+        "carImage": "./assets/images/car-4.jpg",
+        "carSmallImage":"./assets/images/RenualtMeganeManua.png",
+        "carTitle": "Renualt MeganeManual sw or Similar",
+        "carYear": 2020,
+        "carList": [
+          {
+            "icon": "people-outline",
+            "text": "4 People"
+          },
+          {
+            "icon": "flash-outline",
+            "text": "Gasoline"
+          },
+          {
+            "icon": "speedometer-outline",
+            "text": "5.3km / 1-litre"
+          },
+          {
+            "icon": "hardware-chip-outline",
+            "text": "Manual"
+          }
+        ],
+        "carPrice": 90, 
+        "valute": "€/per day",
+        "carInsurance": 20 
+      },
+      {
+        "carIndex": 7,
+        "carImage": "./assets/images/car-5.jpg",
+        "carSmallImage":"./assets/images/SuzukiSwace.png",
+        "carTitle": "Suzuki Swace or Similar",
+        "carYear": 2020,
+        "carList": [
+          {
+            "icon": "people-outline",
+            "text": "4 People"
+          },
+          {
+            "icon": "flash-outline",
+            "text": "Gasoline"
+          },
+          {
+            "icon": "speedometer-outline",
+            "text": "5.3km / 1-litre"
+          },
+          {
+            "icon": "hardware-chip-outline",
+            "text": "Manual"
+          }
+        ],
+        "carPrice": 130, 
+        "valute": "€/per day",
+        "carInsurance": 20 
+      },
+      {
+        "carIndex": 8,
+        "carImage": "./assets/images/car-6.jpg",
+        "carSmallImage":"./assets/images/Mercedes.png",
+        "carTitle": "Mercedes E Clasa 220 amg",
+        "carYear": 2020,
+        "carList": [
+          {
+            "icon": "people-outline",
+            "text": "4 People"
+          },
+          {
+            "icon": "flash-outline",
+            "text": "Gasoline"
+          },
+          {
+            "icon": "speedometer-outline",
+            "text": "5.3km / 1-litre"
+          },
+          {
+            "icon": "hardware-chip-outline",
+            "text": "Manual"
+          }
+        ],
+        "carPrice": 160, 
+        "valute": "€/per day",
+        "carInsurance": 20 
+      },
+      {
+        "carIndex": 9,
+        "carImage": "./assets/images/car-6.jpg",
+        "carSmallImage":"./assets/images/Bmw.png",
+        "carTitle": "Bmw 3 serija M",
+        "carYear": 2020,
+        "carList": [
+          {
+            "icon": "people-outline",
+            "text": "4 People"
+          },
+          {
+            "icon": "flash-outline",
+            "text": "Gasoline"
+          },
+          {
+            "icon": "speedometer-outline",
+            "text": "5.3km / 1-litre"
+          },
+          {
+            "icon": "hardware-chip-outline",
+            "text": "Manual"
+          }
+        ],
+        "carPrice": 300, 
+        "valute": "€/per day",
+        "carInsurance": 20 
+      },      {
+        "carIndex": 10,
+        "carImage": "./assets/images/car-6.jpg",
+        "carSmallImage":"./assets/images/TCrossSmall.png",
+        "carTitle": "T-cross",
+        "carYear": 2020,
+        "carList": [
+          {
+            "icon": "people-outline",
+            "text": "4 People"
+          },
+          {
+            "icon": "flash-outline",
+            "text": "Gasoline"
+          },
+          {
+            "icon": "speedometer-outline",
+            "text": "5.3km / 1-litre"
+          },
+          {
+            "icon": "hardware-chip-outline",
+            "text": "Manual"
+          }
+        ],
+        "carPrice": 300, 
+        "valute": "€/per day",
+        "carInsurance": 20 
+      },      
+      {
+        "carIndex": 11,
+        "carImage": "./assets/images/car-6.jpg",
+        "carSmallImage":"./assets/images/TCrossSmall.png",
+        "carTitle": "Transfers",
+        "carYear": 2020,
+        "carList": [
+          {
+            "icon": "people-outline",
+            "text": "4 People"
+          },
+          {
+            "icon": "flash-outline",
+            "text": "Gasoline"
+          },
+          {
+            "icon": "speedometer-outline",
+            "text": "5.3km / 1-litre"
+          },
+          {
+            "icon": "hardware-chip-outline",
+            "text": "Manual"
+          }
+        ],
+        "carPrice": 100, 
+        "valute": "€/per day",
+        "carInsurance": 20 
+      }
+
+    ]
+  }
+
+
+  
+
+
+  
+  
